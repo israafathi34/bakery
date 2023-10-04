@@ -1,0 +1,461 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+ul {
+    list-style: none;
+}
+a{
+    text-decoration: none
+}
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+
+}
+@media (min-width : 768px) {
+    .container{
+        width: 737px;
+    }    
+}
+
+@media (min-width : 992px) {
+    .container{
+        width: 972px;
+    }    
+}
+
+@media (min-width : 1200px) {
+    .container{
+        width: 1170px;
+    }    
+} 
+/* ---------------------global ----------------- */
+
+nav {
+    background-color:  white;
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding: 5px 0;
+}
+nav .container .logo {
+    width: 15%;
+    display: inline-block;
+}
+nav .container .logo img {
+    width: 100%;
+    vertical-align: middle;
+}
+nav .container .list  {
+    display: inline-block;
+    width: 77%;
+    vertical-align: middle;
+    text-align: center;
+}
+nav .container .list ul {
+    margin-left: 50px;
+}
+nav .container .list ul li {
+    display: inline-block;
+    margin: 0px 20px;
+}
+nav .container .list ul li a {
+    color: gray;
+}
+nav .container .list ul li a.active ,
+nav .container .list ul li a:hover
+{
+color: black;
+}
+@media screen and (max-width : 483px){
+    nav .container .list ul {
+        margin-left: 0px;
+        }
+    nav .container .list ul li {
+        margin: 0px ;
+        font-size: 10px;
+    }
+}
+@media screen and (max-width : 768px){
+
+    nav .container .list ul {
+        margin-left: 10px;
+        }
+    nav .container .list ul li {
+        margin: 0px 5px;
+    }
+}
+/* -------------------- end nav --------------- */
+
+/* -------------------- start header ------------- */
+header {
+    background-image: url(imgs/drew-coffman-1872.jpg);
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    overflow: auto;
+}
+header .container .content {
+    width: 600px;
+    margin: 50px auto;
+    padding: 50px 0px;
+    text-align: center;
+}
+header  .container .content :first-child {
+    margin: 50px 0px 40px 0px;
+    padding-top: 50px;
+    font-size: 20px;
+
+} 
+header  .container .content h1 {
+    font-size: 70px;
+    margin-bottom: 50px  ;
+}
+header  .container .content p {
+    margin-bottom: 50px  ;
+    font-size: 20px;
+    line-height: 1.7;
+}
+header  .container .content .btn{
+    padding:  20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    transition: .3s;
+}
+header  .container .content .btn1 {
+    background-color:#8e7754 ;
+    border: #8e7754 1px solid;
+}
+header  .container .content .btn1:hover{
+    background-color: white;
+    color: black;
+}
+header  .container .content .btn2 {
+    background-color:transparent ;
+    border: white 1px solid;
+}
+header  .container .content .btn2:hover{
+    background-color: white;
+    color: black;
+}
+@media screen and ( max-width : 616px) {
+    header .container .content {
+        width: fit-content;
+    }
+    header  .container .content h1 {
+        font-size: 40px;}
+    header  .container .content .btn{
+        padding:  15px;
+        font-size: 15px;
+        
+    }
+}
+/* -------------------- end header --------------- */
+
+/* -------------------- start about --------------- */
+#About {
+    margin: 50px 0;
+}
+#About .container .image-about {
+    width: 40%;
+    margin-right: 50px;
+    display: inline-block;
+}
+#About .container .image-about img {
+    width: 100%;
+    vertical-align: middle;
+}
+#About .container .contant-about {
+    width: 40%;
+    margin-left: 50px;
+    display: inline-block;
+    vertical-align: middle;
+}
+#About .container .contant-about h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+#About .container .contant-about p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+
+}
+
+#About .container .contant-about .about-list img {
+    width: 30px;
+    border-radius: 50%;
+    vertical-align: middle;
+    padding: 5px 10px 5px 0;
+}
+@media screen and (max-width : 768px){
+    #About .container .image-about {
+        width: 90%;
+        margin:auto;
+        display: block;
+    }
+    #About .container .image-about img {
+        width: 100%;
+    }
+    #About .container .contant-about {
+        width: 90%;
+        margin:auto;
+        display: block;
+    }
+    #About .container .contant-about h2 {
+        font-size: 30px;
+        margin: 20px 00px;
+    }
+    #About .container .contant-about p {
+        font-size: 18px;
+        line-height: 1.7;
+        margin-bottom: 20px;
+    
+    }
+    
+    #About .container .contant-about .about-list img {
+        width: 20px;
+        border-radius: 50%;
+        padding: 5px 10px 5px 0;
+    }
+}
+/* -------------------- end about --------------- */
+
+/* -------------------- start location --------------*/
+#OurOffer {
+    padding: 50px 0;
+    background-color: #eee;
+}
+#OurOffer .container .image-offer {
+    width: 40%;
+    margin-left: 50px;
+    display: inline-block;
+}
+#OurOffer .container .image-offer img {
+    width: 100%;
+    vertical-align: middle;
+}
+#OurOffer .container .offer-content {
+    width: 40%;
+    margin-right: 50px;
+    display: inline-block;
+    vertical-align: middle;
+}
+#OurOffer .container .offer-content h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+#OurOffer .container .offer-content p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+
+}
+@media screen and (max-width : 768px) {
+    #OurOffer .container .image-offer {
+        width: 90%;
+        margin:auto;
+        display: block;
+    }
+    #OurOffer .container .image-offer img {
+        width: 100%;
+    }
+    #OurOffer .container .offer-content {
+        width: 90%;
+        margin:auto;
+        display: block;
+    }
+    #OurOffer .container .offer-content h2 {
+        font-size: 30px;
+        margin: 20px 0px;
+    }
+    #OurOffer .container .offer-content p {
+        font-size: 18px;
+        line-height: 1.7;
+        margin-bottom: 20px;
+    
+    }
+}
+/* -------------------- end location --------------- */
+#Gallery {
+    padding: 50px 0px;
+    text-align: center;
+}
+#Gallery .container .head {
+    margin: auto;
+}
+#Gallery .container .head h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+#Gallery .container .head  p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+#Gallery .container .parent-gallary {
+    text-align: center;
+}
+#Gallery .container .parent-gallary .child {
+    width: calc(100% /3 );
+    float: left;
+}
+#Gallery .container .parent-gallary .child img {
+    width: 90%;
+}
+#Gallery .container .parent-gallary .child h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+#Gallery .container .parent-gallary .child p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+.clr-fix{
+    clear: both;
+}
+@media screen and (max-width : 768px) {
+    #Gallery .container .parent-gallary .child {
+        width: 100%;
+        float: none;
+    }
+    #Gallery .container .parent-gallary .child h3 {
+        margin-top: 20px;
+    }
+}
+/* --------------------- end ------------------------ */
+#Blog {
+    padding: 50px 0;
+    background-color: #eee;
+}
+#Blog .container .parent-blog .contant-blog {
+    width: 40%;
+    margin-right: 50px;
+    float: left;
+}
+#Blog .container .parent-blog .contant-blog h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+#Blog .container .parent-blog .contant-blog p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+#Blog .container .parent-blog .contant-blog .blog-list{
+    margin-bottom: 5px;
+}
+#Blog .container .parent-blog .contant-blog .blog-list img {
+    width: 30px;
+    border-radius: 50%;
+    vertical-align: middle;
+    padding: 5px 10px 5px 0;
+}
+#Blog .container .parent-blog .image-blog {
+    float: left;
+    width: 40%;
+    margin-left: 50px;
+}
+#Blog .container .parent-blog .image-blog iframe{
+    width: 100%;
+}
+@media screen and (max-width : 768px) {
+    #Blog .container .parent-blog .contant-blog {
+        width: 90%;
+        margin:auto;
+        float: none;
+    }
+    #Blog .container .parent-blog .image-blog {
+        float: none;
+        width: 90%;
+        margin:auto;
+    }
+}
+/* -------------------------------------------- */
+#Contact {
+    background-color: #403d38;
+    padding: 50px 0px;
+    color: gray;
+}
+#Contact .container .contact-child {
+    width: calc(100%/4);
+    float: left;
+}
+#Contact .container .contact-child  h4 {
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+#Contact .container .contact-child .cont p {
+    padding: 10px 0px;
+
+}
+#Contact .container .contact-child ul li {
+    padding: 5px 0px;
+}
+hr {
+    width: 200px;
+}
+@media screen and (max-width : 768px) {
+    #Contact .container .contact-child {
+        width: calc(90%);
+        float: none;
+        margin: 10px auto;
+    }
+}
+/* ---------------------------------- */
+.footer{
+    padding: 50px 0px;
+    background-color :#353330;
+    color: gray;
+}
+.footer .container .poster {
+    width: 20%;
+    margin: auto;
+    text-align: center;
+}
+.footer .container .poster h4 {
+    margin: 30px 0;
+    font-size: 20px;
+}
+.footer .container .poster img{
+    width: 100%;
+}
+.footer .container .icons {
+    width: 20%;
+    margin: auto;
+
+}
+.footer .container .icons img {
+    float: left;
+    width: 30px;
+    border-radius: 50%;
+    margin: 0px 7px ;
+}
+@media screen and (max-width : 768px) {
+    .footer .container .poster {
+        width: 20%;
+    }
+    .footer .container .poster h4 {
+        margin: 30px 0;
+        font-size: 15px;
+    }
+    .footer .container .poster img{
+        width: 100%;
+    }
+    .footer .container .icons {
+        width: 30%;
+        margin: auto;
+    
+    }
+    .footer .container .icons img {
+        float: left;
+        background-color: aquamarine;
+        width: 10px;
+        border-radius: 50%;
+        margin: 0px 5px ;
+    }
+}
